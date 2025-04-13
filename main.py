@@ -58,13 +58,11 @@ class PriceChangeMessage(BaseModel):
 if __name__ == '__main__':
     # Interesting ticker symbols
     ticker_symbols = [
-        "VT"
+        "VT",
+        "VNQ",
     ]
     lookback_periods = [
-        90,
         60,
-        50,
-        40,
         30,
         20,
         10,
@@ -107,3 +105,4 @@ if __name__ == '__main__':
             print(f"Current Price: {change.current_price}")
             print(f"Price Change Percent: {change.price_change_percent:.2%}")
             print("-" * 40)
+        print("=" * 40)
